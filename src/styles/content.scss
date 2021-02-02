@@ -7,4 +7,11 @@
   h1 {
     color: white;
   }
+
+  .experience-icons {
+    font-size: 1.5rem;
+    @media screen and (min-width: 580px) {
+      font-size: 2rem;
+    }
+  }
 }

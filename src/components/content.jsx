@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Zoom, Fade } from "react-reveal";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
@@ -6,21 +6,24 @@ import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiInkscape } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
 import { FaNodeJs, FaReact, FaNpm } from "react-icons/fa";
+import LocalBusiness from "../images/project-images/local-business.svg";
+import UnderConstruction from "../images/project-images/under-construction.png";
 
 const Content = () => {
   // const [showGreeting, setShowGreeting] = useState(false);
+  const cardBackground = 'rgba(0,0,0,0.5)';
+
 
   return (
     <section className="content">
       <Container className="d-flex flex-column">
         {/* My Projects Section - Project 1 */}
         <Zoom>
-          <Card style={{ maxWidth: "18rem", marginBottom: "5rem" }}>
+          <Card style={{ maxWidth: "18rem", marginBottom: "5rem", background: cardBackground }}>
             <Card.Img
               variant="top"
-              src="#"
+              src={LocalBusiness}
               style={{
-                border: "2px solid black",
                 height: "200px",
                 width: "200px",
                 margin: "1rem auto 0",
@@ -47,13 +50,13 @@ const Content = () => {
               maxWidth: "18rem",
               marginLeft: "auto",
               marginBottom: "5rem",
+              background: cardBackground
             }}
           >
             <Card.Img
               variant="top"
-              src="#"
+              src={UnderConstruction}
               style={{
-                border: "2px solid black",
                 height: "200px",
                 width: "200px",
                 margin: "1rem auto 0",
@@ -75,12 +78,11 @@ const Content = () => {
 
         {/* My Projects Section - Project 3 */}
         <Fade left>
-          <Card style={{ maxWidth: "18rem", marginBottom: "5rem" }}>
+          <Card style={{ maxWidth: "18rem", marginBottom: "5rem", background: cardBackground }}>
             <Card.Img
               variant="top"
-              src="#"
+              src={UnderConstruction}
               style={{
-                border: "2px solid black",
                 height: "200px",
                 width: "200px",
                 margin: "1rem auto 0",
@@ -101,13 +103,13 @@ const Content = () => {
               maxWidth: "18rem",
               marginLeft: "auto",
               marginBottom: "5rem",
+              background: cardBackground
             }}
           >
             <Card.Img
               variant="top"
-              src="#"
+              src={UnderConstruction}
               style={{
-                border: "2px solid black",
                 height: "200px",
                 width: "200px",
                 margin: "1rem auto 0",
@@ -124,22 +126,22 @@ const Content = () => {
 
       <Container>
         <Zoom>
-          <Card style={{ marginBottom: "5rem" }}>
-            <Card.Body>
-              <Row>
+          <Card style={{ marginBottom: "5rem", background: cardBackground }}>
+            <Card.Body style={{maxWidth: '40rem', margin: 'auto'}}>
+              <Row style={{background: 'black'}}>
                 <Col>
-                  <AiFillHtml5 style={{ fontSize: "2rem", color: "red" }} />
+                  <AiFillHtml5 className="experience-icons"style={{ color: "red" }} />
                 </Col>
                 <Col>
-                  <IoLogoCss3 style={{ fontSize: "2rem", color: "#264de4" }} />
+                  <IoLogoCss3 className="experience-icons"style={{ color: "#264de4" }} />
                 </Col>
                 <Col>
                   <SiJavascript
-                    style={{ fontSize: "2rem", color: "#f0db4f" }}
+                    className="experience-icons"style={{ color: "#f0db4f" }}
                   />
                 </Col>
                 <Col>
-                  <FaNodeJs style={{ fontSize: "2rem", color: "#68a063" }} />
+                  <FaNodeJs className="experience-icons"style={{ color: "#68a063" }} />
                 </Col>
               </Row>
               <Card.Title className="mt-3">Experience</Card.Title>
@@ -149,16 +151,16 @@ const Content = () => {
               </Card.Text>
               <Row>
                 <Col>
-                  <FaReact style={{ fontSize: "2rem", color: "#61DBFB" }} />
+                  <FaReact className="experience-icons" style={{ color: "#61DBFB" }} />
                 </Col>
                 <Col>
-                  <SiInkscape style={{ fontSize: "2rem" }} />
+                  <SiInkscape className="experience-icons" style={{color: 'white'}}/>
                 </Col>
                 <Col>
-                  <BsBootstrap style={{ fontSize: "2rem", color: "#563d7c" }} />
+                  <BsBootstrap className="experience-icons" style={{ color: "#563d7c" }} />
                 </Col>
                 <Col>
-                  <FaNpm style={{ fontSize: "2rem", color: "#CC3534" }} />
+                  <FaNpm className="experience-icons" style={{ color: "#CC3534" }} />
                 </Col>
               </Row>
               {/* <Button variant="primary">Go somewhere</Button> */}
@@ -169,15 +171,15 @@ const Content = () => {
 
       <Container>
         <Zoom>
-          <Card style={{ marginBottom: "5rem" }}>
+          <Card style={{ marginBottom: "5rem", backgroundColor: cardBackground }}>
             <Card.Img
               variant="top"
-              src="#"
+              src={UnderConstruction}
               style={{
-                border: "2px solid black",
-                height: "200px",
-                width: "200px",
                 margin: "1rem auto 0",
+                boxShadow: "0 0 2 gray",
+                height: '150px',
+                width: '150px'
               }}
             />
             <Card.Body>
