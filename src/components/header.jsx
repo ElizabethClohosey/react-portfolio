@@ -24,9 +24,9 @@ const Header = () => {
             md={3}
             className="d-flex justify-content-center order-3 order-md-2"
           >
-            <AiFillGithub style={{ color: "red", fontSize: '2rem', marginRight: '.5rem'}} />
-            <FaLinkedin style={{ color: "green", fontSize: '2rem', marginRight: '.5rem'}} />
-            <FaFacebook style={{ color: "blue", fontSize: '2rem' }} />
+            <AiFillGithub style={{ color: "#fafafa", fontSize: '2rem', marginRight: '.5rem'}} />
+            <FaLinkedin style={{ color: "#00A0dc", fontSize: '2rem', marginRight: '.5rem'}} />
+            <FaFacebook style={{ color: "#3b5998", fontSize: '2rem' }} />
             {/* <ion-icon name="logo-github" style={{color: 'red'}}></ion-icon>
               <ion-icon name="logo-linkedin" style={{color: 'green'}}></ion-icon>
               <ion-icon name="logo-facebook" style={{color: 'blue'}}></ion-icon> */}

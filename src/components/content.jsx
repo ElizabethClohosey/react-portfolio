@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Zoom, Fade } from "react-reveal";
-import { AiFillHtml5 } from "react-icons/ai";
+import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiInkscape } from "react-icons/si";
 import { BsBootstrap } from "react-icons/bs";
@@ -29,6 +29,12 @@ const Content = () => {
             <Card.Body>
               <Card.Title>Project One</Card.Title>
               <Card.Text>Short project description</Card.Text>
+              <a href="https://github.com/ElizabethClohosey">
+                <AiFillGithub />
+              </a>
+              <a href="https://github.com/ElizabethClohosey">
+                <button>Project One Link</button>
+              </a>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
@@ -128,14 +134,15 @@ const Content = () => {
                   <IoLogoCss3 style={{ fontSize: "2rem", color: "#264de4" }} />
                 </Col>
                 <Col>
-                  <SiJavascript style={{ fontSize: "2rem", color: "#f0db4f" }} />
+                  <SiJavascript
+                    style={{ fontSize: "2rem", color: "#f0db4f" }}
+                  />
                 </Col>
                 <Col>
                   <FaNodeJs style={{ fontSize: "2rem", color: "#68a063" }} />
                 </Col>
               </Row>
-
-              <Card.Title>Experience</Card.Title>
+              <Card.Title className="mt-3">Experience</Card.Title>
               <Card.Text>
                 Add some text about your years of experience and coding
                 bootcamp......? Maybe..... IDK
@@ -148,10 +155,10 @@ const Content = () => {
                   <SiInkscape style={{ fontSize: "2rem" }} />
                 </Col>
                 <Col>
-                  <BsBootstrap style={{ fontSize: "2rem", color: '#563d7c' }} />
+                  <BsBootstrap style={{ fontSize: "2rem", color: "#563d7c" }} />
                 </Col>
                 <Col>
-                  <FaNpm style={{ fontSize: "2rem", color: '#CC3534' }} />
+                  <FaNpm style={{ fontSize: "2rem", color: "#CC3534" }} />
                 </Col>
               </Row>
               {/* <Button variant="primary">Go somewhere</Button> */}
