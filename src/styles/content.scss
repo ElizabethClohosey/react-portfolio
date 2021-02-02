@@ -1,7 +1,10 @@
-
-
 .content {
   // border: 3px solid red;
-  color: white;
   padding-top: 2rem;
+  max-width: 1024px;
+  margin: auto;
+
+  h1 {
+    color: white;
+  }
 }

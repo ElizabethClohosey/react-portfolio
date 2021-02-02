@@ -13,8 +13,6 @@ function App() {
       <div class="clouds"></div>
       <div className="wrapper">
         <Header />
-        {/* <Button ovariant="primary" onClick={(e) => console.log("Sup")}>Testing</Button> */}
-        {/* </section> */}
         <Content />
       </div>
     </div>
