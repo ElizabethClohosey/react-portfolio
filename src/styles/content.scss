@@ -12,21 +12,31 @@
     background: black;
     outline: none;
     border: none;
-    border: 1px solid #e0bbf8;
-    box-shadow: 0 0 2px #e0bbf8;
+    // border: 1px solid #e0bbf8;
+    // box-shadow: 0 0 2px #e0bbf8;
     color: white;
-    margin-left: 1rem;
+    // margin-left: 1rem;
     font-size: 0.5rem;
 
     &:hover {
-      border: 1px solid transparent;
+      background: black;
       box-shadow: 0 0 5px #e0bbf8;
       background: transparent;
     }
   }
 
   .project-icon {
-    color: #e0bbf8;
+    font-size: 2rem;
+    color: white;
+
+    &:hover {
+      color: rgb(144, 253, 242);
+      box-shadow: 0 0 15px rgb(64, 224, 208), inset 0px 0px 3px 3px rgba(64, 224, 208, 0.4);
+      border-radius: 50%;
+      // color: #e0bbf8;
+      // box-shadow: 0 0 15px rgb(224, 187, 248), inset 0px 0px 3px 3px rgba(224, 187, 248, 0.4);
+      // border-radius: 50%;
+    }
   }
 
   .experience-icons {

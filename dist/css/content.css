@@ -1,0 +1,43 @@
+.content {
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.content h1 {
+  color: white;
+}
+
+.content .project-link {
+  background: black;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.content .project-link:hover {
+  background: black;
+  box-shadow: 0 0 5px #e0bbf8;
+  background: transparent;
+}
+
+.content .project-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.content .project-icon:hover {
+  color: #90fdf2;
+  box-shadow: 0 0 15px turquoise, inset 0px 0px 3px 3px rgba(64, 224, 208, 0.4);
+  border-radius: 50%;
+}
+
+.content .experience-icons {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 580px) {
+  .content .experience-icons {
+    font-size: 2rem;
+  }
+}

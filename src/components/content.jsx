@@ -11,91 +11,119 @@ import UnderConstruction from "../images/project-images/under-construction.png";
 
 const Content = () => {
   // const [showGreeting, setShowGreeting] = useState(false);
-  const cardBackground = "rgba(0,0,0,0.5)";
-  const cardText = ".5rem";
+  const purple = "#8000ff";
+  const pink = "#ff00ff";
+  const blue = "#0000ff";
+  const orange = "#ff9340";
+
+  const cardBackground = "rgba(0,0,0,0.4)";
+  const footerBackground = "rgba(0,0,0,0.5)";
+  // const cardText = ".5rem";
+
+  const projectCardStyle = {
+    maxWidth: "18rem",
+    marginBottom: "5rem",
+    background: cardBackground,
+    boxShadow: "0 0 10px black",
+  };
+ 
+  const projectCardTitleStyle = {
+    color: '#e0bbf8',
+    textShadow: '0 0 20px #cc06fe',
+    fontFamily: '"Oleo Script", cursive',
+    fontSize: '1.75rem'
+  }
+  // color: #e0bbf8;
+  // font-size: 2rem;
+  // text-shadow: 0px 0px 20px #cc06fe;
+  // font-family: "Oleo Script", cursive;
+
+  const projectCardFooterStyle = {
+    background: footerBackground,
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  };
 
   return (
     <section className="content">
       <Container className="d-flex flex-column" style={{ color: "white" }}>
         {/* My Projects Section - Project 1 */}
         <Zoom>
-          <Card
-            style={{
-              maxWidth: "18rem",
-              marginBottom: "5rem",
-              background: cardBackground,
-              boxShadow: "0 0 10px black",
-            }}
-          >
+          <Card style={projectCardStyle} className="project-card">
             <Card.Img
               variant="top"
               src={LocalBusiness}
+              alt="local business with image of animated dog"
               style={{
                 height: "175px",
                 width: "175px",
                 margin: "1rem auto 0",
-                border: "1px solid #e0bbf8",
-                boxShadow: "0 0 2px #e0bbf8",
+                boxShadow: `0 0 5px ${purple}`,
               }}
             />
             <Card.Body>
-              <Card.Title>Project One</Card.Title>
-              <Card.Text style={{ fontSize: cardText }}>
-                Short project description
+              <Card.Title style={projectCardTitleStyle}>K9 Clubhouse</Card.Title>
+              <Card.Text>
+                Luxury Dog Hotel
               </Card.Text>
-              <a href="https://github.com/ElizabethClohosey">
-                <AiFillGithub className="project-icon" />
-              </a>
-              <a href="https://github.com/ElizabethClohosey">
-                <button className="project-link">Project One Link</button>
-              </a>
-              {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
+            <Card.Footer style={projectCardFooterStyle}>
+              <a href="https://github.com/ElizabethClohosey">
+                <AiFillGithub className="project-icon"/>
+              </a>
+              <a href="https://github.com/ElizabethClohosey">
+                <button
+                  className="project-link"
+                  style={{ border: `1px solid ${purple}` }}
+                >
+                  Project One Link
+                </button>
+              </a>
+            </Card.Footer>
           </Card>
         </Zoom>
 
         {/* My Projects Section - Project 2 */}
         <Zoom>
-          <Card
-            style={{
-              maxWidth: "18rem",
-              marginLeft: "auto",
-              marginBottom: "5rem",
-              background: cardBackground,
-            }}
-          >
+          <Card style={projectCardStyle} className="ml-auto">
             <Card.Img
               variant="top"
               src={UnderConstruction}
+              alt="item is currently being built"
               style={{
-                height: "150px",
-                width: "150px",
+                height: "175px",
+                width: "175px",
                 margin: "1rem auto 0",
+                boxShadow: `0 0 5px ${blue}`,
               }}
             />
             <Card.Body>
-              <Card.Title>Project Two</Card.Title>
+              <Card.Title style={projectCardTitleStyle}>Project Two</Card.Title>
               <Card.Text>
-                <p>Short project description</p>
-                <p>
                   Some quick example text to build on the project title and make
                   up the bulk of the card's content.
-                </p>
               </Card.Text>
-              {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
+            <Card.Footer style={projectCardFooterStyle}>
+              <a href="https://github.com/ElizabethClohosey">
+                <AiFillGithub className="project-icon" />
+              </a>
+              <a href="https://github.com/ElizabethClohosey">
+                <button
+                  className="project-link"
+                  style={{ border: `1px solid ${blue}` }}
+                >
+                  Project One Link
+                </button>
+              </a>
+            </Card.Footer>
           </Card>
         </Zoom>
 
         {/* My Projects Section - Project 3 */}
         <Fade left>
-          <Card
-            style={{
-              maxWidth: "18rem",
-              marginBottom: "5rem",
-              background: cardBackground,
-            }}
-          >
+          <Card style={projectCardStyle}>
             <Card.Img
               variant="top"
               src={UnderConstruction}
@@ -103,26 +131,33 @@ const Content = () => {
                 height: "150px",
                 width: "150px",
                 margin: "1rem auto 0",
+                boxShadow: `0 0 5px ${pink}`,
               }}
             />
             <Card.Body>
-              <Card.Title>Project Three</Card.Title>
+              <Card.Title style={projectCardTitleStyle}>Project Three</Card.Title>
               <Card.Text>Short project description</Card.Text>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
+            <Card.Footer style={projectCardFooterStyle}>
+              <a href="https://github.com/ElizabethClohosey">
+                <AiFillGithub className="project-icon" />
+              </a>
+              <a href="https://github.com/ElizabethClohosey">
+                <button
+                  className="project-link"
+                  style={{ border: `1px solid ${pink}` }}
+                >
+                  Project Three Link
+                </button>
+              </a>
+            </Card.Footer>
           </Card>
         </Fade>
 
         {/* My Projects Section - Project 4 */}
         <Fade right>
-          <Card
-            style={{
-              maxWidth: "18rem",
-              marginLeft: "auto",
-              marginBottom: "5rem",
-              background: cardBackground,
-            }}
-          >
+          <Card style={projectCardStyle} className="ml-auto">
             <Card.Img
               variant="top"
               src={UnderConstruction}
@@ -130,13 +165,27 @@ const Content = () => {
                 height: "150px",
                 width: "150px",
                 margin: "1rem auto 0",
+                boxShadow: `0 0 5px ${orange}`,
               }}
             />
             <Card.Body>
-              <Card.Title>Project Four</Card.Title>
+              <Card.Title style={projectCardTitleStyle}>Project Four</Card.Title>
               <Card.Text>Short project description</Card.Text>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
+            <Card.Footer style={projectCardFooterStyle}>
+              <a href="https://github.com/ElizabethClohosey">
+                <AiFillGithub className="project-icon" />
+              </a>
+              <a href="https://github.com/ElizabethClohosey">
+                <button
+                  className="project-link"
+                  style={{ border: `1px solid ${orange}` }}
+                >
+                  Project Four Link
+                </button>
+              </a>
+            </Card.Footer>
           </Card>
         </Fade>
       </Container>
