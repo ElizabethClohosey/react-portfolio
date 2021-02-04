@@ -9,12 +9,12 @@
 
 .clouds {
   position: absolute;
-  top: 0;
+  top: 10vh;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: block;
   background: transparent;
   background-image: url("../../images/animations/clouds-6.svg");
@@ -128,7 +128,6 @@ header p {
 
 .content .icon-box {
   background: black;
-  border: 1px solid #8000ff;
 }
 
 .content .icon-box .project-icon {
@@ -136,10 +135,10 @@ header p {
   color: white;
 }
 
-.content .icon-box .project-icon:hover {
-  color: #90fdf2;
-  box-shadow: 0 0 15px turquoise, inset 0px 0px 3px 3px rgba(64, 224, 208, 0.4);
-  border-radius: 50%;
+.content .icon-box:hover {
+  background: black;
+  box-shadow: 0 0 5px #e0bbf8;
+  background: transparent;
 }
 
 .content .experience-icons {
@@ -152,12 +151,21 @@ header p {
   }
 }
 
+.content .blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: .2;
+  }
+}
+
 .wrapper {
   position: fixed;
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  padding: 3rem 0;
   z-index: 10;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
@@ -169,4 +177,9 @@ header p {
 
 .wrapper::-webkit-scrollbar {
   display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
 }

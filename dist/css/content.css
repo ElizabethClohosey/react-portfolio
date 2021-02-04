@@ -1,5 +1,5 @@
 .content {
-  padding-top: 2rem;
+  padding-top: 15rem;
   margin: auto;
 }
 
@@ -11,6 +11,7 @@
   background: black;
   outline: none;
   border: none;
+  padding: .35rem;
   color: white;
   font-size: 0.5rem;
 }
@@ -22,20 +23,18 @@
 }
 
 .content .icon-box {
-  padding: .25rem;
   background: black;
-  border: 1px solid;
 }
 
-.content .project-icon {
+.content .icon-box .project-icon {
   font-size: 2rem;
   color: white;
 }
 
-.content .project-icon:hover {
-  color: #90fdf2;
-  box-shadow: 0 0 15px turquoise, inset 0px 0px 3px 3px rgba(64, 224, 208, 0.4);
-  border-radius: 50%;
+.content .icon-box:hover {
+  background: black;
+  box-shadow: 0 0 5px #e0bbf8;
+  background: transparent;
 }
 
 .content .experience-icons {

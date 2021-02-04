@@ -25,6 +25,7 @@ const Content = () => {
   // const cardText = ".5rem";
 
   const projectCardStyle = {
+    textAlign: "center",
     maxWidth: "18rem",
     marginBottom: "7rem",
     background: cardBackground,
@@ -69,9 +70,12 @@ const Content = () => {
               <Card.Text>Luxury Dog Hotel</Card.Text>
             </Card.Body>
             <Card.Footer style={projectCardFooterStyle}>
-              <div className="icon-box">
+              <div
+                className="icon-box"
+                style={{ border: `1px solid ${purple}` }}
+              >
                 <a href="https://github.com/ElizabethClohosey">
-                  <AiFillGithub className="project-icon" />
+                  <AiFillGithub className="project-icon purple" />
                 </a>
               </div>
               <a href="https://github.com/ElizabethClohosey">
@@ -108,9 +112,11 @@ const Content = () => {
               </Card.Text>
             </Card.Body>
             <Card.Footer style={projectCardFooterStyle}>
-              <a href="https://github.com/ElizabethClohosey">
-                <AiFillGithub className="project-icon" />
-              </a>
+              <div className="icon-box" style={{ border: `1px solid ${blue}` }}>
+                <a href="https://github.com/ElizabethClohosey">
+                  <AiFillGithub className="project-icon" />
+                </a>
+              </div>
               <a href="https://github.com/ElizabethClohosey">
                 <button
                   className="project-link"
@@ -144,9 +150,11 @@ const Content = () => {
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
             <Card.Footer style={projectCardFooterStyle}>
-              <a href="https://github.com/ElizabethClohosey">
-                <AiFillGithub className="project-icon" />
-              </a>
+              <div className="icon-box" style={{ border: `1px solid ${pink}` }}>
+                <a href="https://github.com/ElizabethClohosey">
+                  <AiFillGithub className="project-icon" />
+                </a>
+              </div>
               <a href="https://github.com/ElizabethClohosey">
                 <button
                   className="project-link"
@@ -177,12 +185,16 @@ const Content = () => {
                 Project Four
               </Card.Title>
               <Card.Text>Short project description</Card.Text>
-              {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
             <Card.Footer style={projectCardFooterStyle}>
-              <a href="https://github.com/ElizabethClohosey">
-                <AiFillGithub className="project-icon" />
-              </a>
+              <div
+                className="icon-box"
+                style={{ border: `1px solid ${orange}` }}
+              >
+                <a href="https://github.com/ElizabethClohosey">
+                  <AiFillGithub className="project-icon" />
+                </a>
+              </div>
               <a href="https://github.com/ElizabethClohosey">
                 <button
                   className="project-link"
@@ -196,70 +208,75 @@ const Content = () => {
         </Fade>
       </Container>
 
-      <Container>
+      {/* Experience Section *** Make own componenet *** */}
+      <Container style={{ marginBottom: "5rem", background: cardBackground }}>
         <Zoom>
-          <Card style={{ marginBottom: "5rem", background: cardBackground }}>
-            <Card.Body style={{ maxWidth: "40rem", margin: "auto" }}>
-              <Row style={{ background: "black" }}>
-                <Col>
-                  <AiFillHtml5
-                    className="experience-icons"
-                    style={{ color: "red" }}
-                  />
-                </Col>
-                <Col>
-                  <IoLogoCss3
-                    className="experience-icons"
-                    style={{ color: "#264de4" }}
-                  />
-                </Col>
-                <Col>
-                  <SiJavascript
-                    className="experience-icons"
-                    style={{ color: "#f0db4f" }}
-                  />
-                </Col>
-                <Col>
-                  <FaNodeJs
-                    className="experience-icons"
-                    style={{ color: "#68a063" }}
-                  />
-                </Col>
-              </Row>
-              <Card.Title className="mt-3">Experience</Card.Title>
-              <Card.Text>
-                Add some text about your years of experience and coding
-                bootcamp......? Maybe..... IDK
-              </Card.Text>
-              <Row>
-                <Col>
-                  <FaReact
-                    className="experience-icons"
-                    style={{ color: "#61DBFB" }}
-                  />
-                </Col>
-                <Col>
-                  <SiInkscape
-                    className="experience-icons"
-                    style={{ color: "white" }}
-                  />
-                </Col>
-                <Col>
-                  <BsBootstrap
-                    className="experience-icons"
-                    style={{ color: "#563d7c" }}
-                  />
-                </Col>
-                <Col>
-                  <FaNpm
-                    className="experience-icons"
-                    style={{ color: "#CC3534" }}
-                  />
-                </Col>
-              </Row>
-              {/* <Button variant="primary">Go somewhere</Button> */}
-            </Card.Body>
-          </Card>
+          <Row style={{ background: "rgba(0,0,0,.7)", padding: ".5rem 0", textAlign: 'center' }}>
+            <Col>
+              <AiFillHtml5
+                className="experience-icons"
+                style={{ color: "red" }}
+              />
+            </Col>
+            <Col>
+              <IoLogoCss3
+                className="experience-icons"
+                style={{ color: "#264de4" }}
+              />
+            </Col>
+            <Col>
+              <SiJavascript
+                className="experience-icons"
+                style={{ color: "#f0db4f" }}
+              />
+            </Col>
+            <Col>
+              <FaNodeJs
+                className="experience-icons"
+                style={{ color: "#68a063" }}
+              />
+            </Col>
+          </Row>
+        </Zoom>
+
+        <h2 className="mt-3">E<span className="blink_me">x</span>perience</h2>
+        <p>
+          Add some text about your years of experience and coding
+          bootcamp......? Maybe..... IDK
+        </p>
+        <Zoom>
+          <Row
+            style={{
+              background: "rgba(0,0,0,.7",
+              padding: ".5rem 0",
+              textAlign: "center",
+            }}
+          >
+            <Col>
+              <FaReact
+                className="experience-icons"
+                style={{ color: "#61DBFB" }}
+              />
+            </Col>
+            <Col>
+              <SiInkscape
+                className="experience-icons"
+                style={{ color: "white" }}
+              />
+            </Col>
+            <Col>
+              <BsBootstrap
+                className="experience-icons"
+                style={{ color: "#563d7c" }}
+              />
+            </Col>
+            <Col>
+              <FaNpm
+                className="experience-icons"
+                style={{ color: "#CC3534" }}
+              />
+            </Col>
+          </Row>
         </Zoom>
       </Container>
 

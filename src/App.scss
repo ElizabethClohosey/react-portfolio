@@ -29,7 +29,7 @@
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  padding: 3rem 0;
+  // padding: 3rem 0 0;
   z-index: 10;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -41,11 +41,12 @@
   }
 }
 
-// header {
-//   position: fixed;
-//   width: 100%;
-// }
+header {
+  position: fixed;
+  width: 100%;
+}
 
 // footer {
 
 // }
+
