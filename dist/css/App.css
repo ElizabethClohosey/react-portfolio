@@ -17,7 +17,7 @@
   height: 100vh;
   display: block;
   background: transparent;
-  background-image: url("../../images/clouds-5.svg");
+  background-image: url("../../images/animations/clouds-5.svg");
   background-size: cover;
   background-repeat: repeat;
   z-index: 3;
@@ -46,12 +46,12 @@
 }
 
 .stars {
-  background: #000 url("../../images/stars-2.svg") repeat top center;
+  background: #000 url("../../images/animations/stars-2.svg") repeat top center;
   z-index: 0;
 }
 
 .twinkling {
-  background: transparent url("../../images/twinkling-2.svg") repeat top center;
+  background: transparent url("../../images/animations/twinkling-2.svg") repeat top center;
   z-index: 0;
   animation: move-twink-back 75s linear infinite;
 }
@@ -74,6 +74,19 @@ header h1 {
 @media screen and (min-width: 768px) {
   header h1 {
     font-size: 3rem;
+  }
+}
+
+header .header-icon {
+  color: green;
+  font-size: 1.25rem;
+  margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+  header .header-icon {
+    font-size: 2rem;
+    color: white;
   }
 }
 
