@@ -1,0 +1,20 @@
+
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  z-index: 11;
+  top: 0;
+
+  h1 {
+    color: rgb(224, 187, 248);
+    font-size: 2rem;
+    text-shadow: 0px 0px 20px rgb(204, 6, 254);
+    font-family: "Oleo Script", cursive;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+}

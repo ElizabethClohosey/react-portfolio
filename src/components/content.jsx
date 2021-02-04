@@ -15,6 +15,8 @@ const Content = () => {
   const pink = "#ff00ff";
   const blue = "#0000ff";
   const orange = "#ff9340";
+  const headerFont = '"Oleo Script", cursive';
+  // const secondaryFont = "??"
 
   const cardBackground = "rgba(0,0,0,0.4)";
   const footerBackground = "rgba(0,0,0,0.5)";
@@ -22,21 +24,17 @@ const Content = () => {
 
   const projectCardStyle = {
     maxWidth: "18rem",
-    marginBottom: "5rem",
+    marginBottom: "7rem",
     background: cardBackground,
     boxShadow: "0 0 10px black",
   };
- 
+
   const projectCardTitleStyle = {
-    color: '#e0bbf8',
-    textShadow: '0 0 20px #cc06fe',
-    fontFamily: '"Oleo Script", cursive',
-    fontSize: '1.75rem'
-  }
-  // color: #e0bbf8;
-  // font-size: 2rem;
-  // text-shadow: 0px 0px 20px #cc06fe;
-  // font-family: "Oleo Script", cursive;
+    color: "#e0bbf8",
+    textShadow: "0 0 20px #cc06fe",
+    fontFamily: headerFont,
+    fontSize: "1.75rem",
+  };
 
   const projectCardFooterStyle = {
     background: footerBackground,
@@ -63,15 +61,17 @@ const Content = () => {
               }}
             />
             <Card.Body>
-              <Card.Title style={projectCardTitleStyle}>K9 Clubhouse</Card.Title>
-              <Card.Text>
-                Luxury Dog Hotel
-              </Card.Text>
+              <Card.Title style={projectCardTitleStyle}>
+                K9 Clubhouse
+              </Card.Title>
+              <Card.Text>Luxury Dog Hotel</Card.Text>
             </Card.Body>
             <Card.Footer style={projectCardFooterStyle}>
-              <a href="https://github.com/ElizabethClohosey">
-                <AiFillGithub className="project-icon"/>
-              </a>
+              <div className="icon-box">
+                <a href="https://github.com/ElizabethClohosey">
+                  <AiFillGithub className="project-icon" />
+                </a>
+              </div>
               <a href="https://github.com/ElizabethClohosey">
                 <button
                   className="project-link"
@@ -101,8 +101,8 @@ const Content = () => {
             <Card.Body>
               <Card.Title style={projectCardTitleStyle}>Project Two</Card.Title>
               <Card.Text>
-                  Some quick example text to build on the project title and make
-                  up the bulk of the card's content.
+                Some quick example text to build on the project title and make
+                up the bulk of the card's content.
               </Card.Text>
             </Card.Body>
             <Card.Footer style={projectCardFooterStyle}>
@@ -135,7 +135,9 @@ const Content = () => {
               }}
             />
             <Card.Body>
-              <Card.Title style={projectCardTitleStyle}>Project Three</Card.Title>
+              <Card.Title style={projectCardTitleStyle}>
+                Project Three
+              </Card.Title>
               <Card.Text>Short project description</Card.Text>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
@@ -169,7 +171,9 @@ const Content = () => {
               }}
             />
             <Card.Body>
-              <Card.Title style={projectCardTitleStyle}>Project Four</Card.Title>
+              <Card.Title style={projectCardTitleStyle}>
+                Project Four
+              </Card.Title>
               <Card.Text>Short project description</Card.Text>
               {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>

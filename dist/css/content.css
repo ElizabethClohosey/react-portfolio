@@ -21,6 +21,12 @@
   background: transparent;
 }
 
+.content .icon-box {
+  padding: .25rem;
+  background: black;
+  border: 1px solid;
+}
+
 .content .project-icon {
   font-size: 2rem;
   color: white;

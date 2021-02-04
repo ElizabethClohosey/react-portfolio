@@ -17,7 +17,7 @@
   height: 100vh;
   display: block;
   background: transparent;
-  background-image: url("../images/clouds-5.svg");
+  background-image: url("../../images/animations/clouds-5.svg");
   background-size: cover;
   background-repeat: repeat;
   z-index: 3;

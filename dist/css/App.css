@@ -17,7 +17,7 @@
   height: 100vh;
   display: block;
   background: transparent;
-  background-image: url("../images/clouds-5.svg");
+  background-image: url("../../images/clouds-5.svg");
   background-size: cover;
   background-repeat: repeat;
   z-index: 3;
@@ -46,71 +46,21 @@
 }
 
 .stars {
-  background: #000 url("../images/stars-2.svg") repeat top center;
+  background: #000 url("../../images/stars-2.svg") repeat top center;
   z-index: 0;
 }
 
 .twinkling {
-  background: transparent url("../images/twinkling-2.svg") repeat top center;
+  background: transparent url("../../images/twinkling-2.svg") repeat top center;
   z-index: 0;
   animation: move-twink-back 75s linear infinite;
 }
 
-.content {
-  padding-top: 2rem;
-  margin: auto;
-}
-
-.content h1 {
-  color: white;
-}
-
-.content .project-link {
-  background: black;
-  outline: none;
-  border: none;
-  color: white;
-  margin-left: 1rem;
-  font-size: 0.5rem;
-}
-
-.content .project-link:hover {
-  background: black;
-  box-shadow: 0 0 5px #e0bbf8;
-  background: transparent;
-}
-
-.content .project-icon {
-  font-size: 2rem;
-  color: white;
-}
-
-.content .project-icon:hover {
-  color: #8000ff;
-}
-
-.content .experience-icons {
-  font-size: 1.5rem;
-}
-
-@media screen and (min-width: 580px) {
-  .content .experience-icons {
-    font-size: 2rem;
-  }
-}
-
-.App {
-  text-align: center;
-  width: 100%;
-}
-
-.wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  padding: 3rem 0;
-  z-index: 10;
+header {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  z-index: 11;
+  top: 0;
 }
 
 header h1 {
@@ -125,4 +75,78 @@ header h1 {
   header h1 {
     font-size: 3rem;
   }
+}
+
+.content {
+  padding-top: 15rem;
+  margin: auto;
+}
+
+.content h1 {
+  color: white;
+}
+
+.content .project-link {
+  background: black;
+  outline: none;
+  border: none;
+  padding: .35rem;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.content .project-link:hover {
+  background: black;
+  box-shadow: 0 0 5px #e0bbf8;
+  background: transparent;
+}
+
+.content .icon-box {
+  background: black;
+  border: 1px solid #8000ff;
+}
+
+.content .icon-box .project-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.content .icon-box .project-icon:hover {
+  color: #90fdf2;
+  box-shadow: 0 0 15px turquoise, inset 0px 0px 3px 3px rgba(64, 224, 208, 0.4);
+  border-radius: 50%;
+}
+
+.content .experience-icons {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 580px) {
+  .content .experience-icons {
+    font-size: 2rem;
+  }
+}
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 3rem 0;
+  z-index: 10;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
 }

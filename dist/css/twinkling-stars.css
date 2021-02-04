@@ -20,12 +20,12 @@
 }
 
 .stars {
-  background: #000 url("../images/stars-2.svg") repeat top center;
+  background: #000 url("../../images/animations/stars-2.svg") repeat top center;
   z-index: 0;
 }
 
 .twinkling {
-  background: transparent url("../images/twinkling-2.svg") repeat top center;
+  background: transparent url("../../images/animations/twinkling-2.svg") repeat top center;
   z-index: 0;
   animation: move-twink-back 75s linear infinite;
 }

@@ -1,6 +1,6 @@
 .content {
   // border: 3px solid red;
-  padding-top: 2rem;
+  padding-top: 15rem;
   // max-width: 1024px;
   margin: auto;
 
@@ -12,10 +12,8 @@
     background: black;
     outline: none;
     border: none;
-    // border: 1px solid #e0bbf8;
-    // box-shadow: 0 0 2px #e0bbf8;
+    padding: .35rem;
     color: white;
-    // margin-left: 1rem;
     font-size: 0.5rem;
 
     &:hover {
@@ -25,17 +23,23 @@
     }
   }
 
-  .project-icon {
-    font-size: 2rem;
-    color: white;
+  .icon-box {
+    background: black;
+    border: 1px solid $purple;
 
-    &:hover {
-      color: rgb(144, 253, 242);
-      box-shadow: 0 0 15px rgb(64, 224, 208), inset 0px 0px 3px 3px rgba(64, 224, 208, 0.4);
-      border-radius: 50%;
-      // color: #e0bbf8;
-      // box-shadow: 0 0 15px rgb(224, 187, 248), inset 0px 0px 3px 3px rgba(224, 187, 248, 0.4);
-      // border-radius: 50%;
+    .project-icon {
+      font-size: 2rem;
+      color: white;
+
+      &:hover {
+        color: rgb(144, 253, 242);
+        box-shadow: 0 0 15px rgb(64, 224, 208),
+          inset 0px 0px 3px 3px rgba(64, 224, 208, 0.4);
+        border-radius: 50%;
+        // color: #e0bbf8;
+        // box-shadow: 0 0 15px rgb(224, 187, 248), inset 0px 0px 3px 3px rgba(224, 187, 248, 0.4);
+        // border-radius: 50%;
+      }
     }
   }
 
