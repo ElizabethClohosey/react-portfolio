@@ -1,10 +1,12 @@
 header {
   background: rgba(0, 0, 0, 0.8);
-  border-bottom: black;
+  border-bottom: 3px solid black;
   box-shadow: 0 0px 10px black;
   padding: 1rem 0;
   z-index: 11;
   top: 0;
+  position: fixed;
+  width: 100%;
 
   h1 {
     color: rgb(224, 187, 248);

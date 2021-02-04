@@ -19,7 +19,9 @@ const Content = () => {
   // const secondaryFont = "??"
 
   const cardBackground = "rgba(0,0,0,0.4)";
+  // const cardBackground = "transparent";
   const footerBackground = "rgba(0,0,0,0.5)";
+  // const footerBackground = "transparent";
   // const cardText = ".5rem";
 
   const projectCardStyle = {

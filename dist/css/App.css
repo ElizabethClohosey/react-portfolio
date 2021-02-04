@@ -17,7 +17,7 @@
   height: 100vh;
   display: block;
   background: transparent;
-  background-image: url("../../images/animations/clouds-5.svg");
+  background-image: url("../../images/animations/clouds-6.svg");
   background-size: cover;
   background-repeat: repeat;
   z-index: 3;
@@ -57,18 +57,20 @@
 }
 
 header {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 3px solid black;
+  box-shadow: 0 0px 10px black;
+  padding: 1rem 0;
   z-index: 11;
   top: 0;
 }
 
 header h1 {
   color: #e0bbf8;
-  font-size: 2rem;
   text-shadow: 0px 0px 20px #cc06fe;
   font-family: "Oleo Script", cursive;
   margin: 0;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,16 +80,26 @@ header h1 {
 }
 
 header .header-icon {
-  color: green;
+  color: #60fcec;
   font-size: 1.25rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 10px turquoise, inset 0px 0px 7px 7px rgba(64, 224, 208, 0.4);
+  border-radius: 35%;
 }
 
-@media screen and (min-width: 768px) {
+header .header-icon:hover {
+  color: #b8f8f8;
+  box-shadow: 0 0 10px #b8f8f8, inset 0px 0px 7px 7px rgba(184, 248, 248, 0.4);
+}
+
+@media screen and (min-width: 580px) {
   header .header-icon {
     font-size: 2rem;
-    color: white;
   }
+}
+
+header p {
+  margin-bottom: 0;
 }
 
 .content {
@@ -157,9 +169,4 @@ header .header-icon {
 
 .wrapper::-webkit-scrollbar {
   display: none;
-}
-
-header {
-  position: fixed;
-  width: 100%;
 }

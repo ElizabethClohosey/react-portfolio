@@ -35,7 +35,7 @@
 
 .clouds {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -43,9 +43,9 @@
   height: 100vh;
   display: block;
   background: transparent;
-  background-image: url('../../images/animations/clouds-6.svg');
+  background-image: url('../../images/clouds-5.svg');
   background-size: cover;
-  background-repeat: repeat;
+  // background-repeat: repeat;
   // background-repeat: no-repeat;
   z-index: 3;
 
