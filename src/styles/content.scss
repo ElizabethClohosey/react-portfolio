@@ -37,8 +37,21 @@
     }
   }
 
+  // .spiral-galaxy {
+  //   position: relative;
+
+  //   img {
+  //     position: absolute;
+  //     top: -500px;
+
+  //   }
+  // }
+
   .experience-icons {
+    color: #60fcec;
+    box-shadow: 0 0 3px #60fcec;
     font-size: 1.5rem;
+    border-radius: .5rem;
     @media screen and (min-width: 580px) {
       font-size: 2rem;
     }

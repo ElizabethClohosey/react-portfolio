@@ -38,11 +38,24 @@
 }
 
 .content .experience-icons {
+  color: #60fcec;
+  box-shadow: 0 0 3px #60fcec;
   font-size: 1.5rem;
+  border-radius: .5rem;
 }
 
 @media screen and (min-width: 580px) {
   .content .experience-icons {
     font-size: 2rem;
+  }
+}
+
+.content .blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: .2;
   }
 }
