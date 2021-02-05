@@ -8,7 +8,6 @@ import { BsBootstrap } from "react-icons/bs";
 import { FaNodeJs, FaReact, FaNpm } from "react-icons/fa";
 import LocalBusiness from "../images/project-images/local-business.svg";
 import UnderConstruction from "../images/project-images/under-construction.png";
-import spiralGalaxy from "../images/animations/spiral-galaxy.svg";
 
 const Content = () => {
   // const [showGreeting, setShowGreeting] = useState(false);
@@ -129,8 +128,6 @@ const Content = () => {
             </Card.Footer>
           </Card>
         </Zoom>
-        
-        {/* <div className="spiral-galaxy"><img src={spiralGalaxy} alt="#"></img></div> */}
 
         {/* My Projects Section - Project 3 */}
         <Fade left>
