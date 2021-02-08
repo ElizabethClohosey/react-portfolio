@@ -211,7 +211,7 @@ const Content = () => {
       {/* Experience Section *** Make own componenet *** */}
       <Container
         style={{
-          marginBottom: "5rem",
+          marginBottom: "7rem",
           background: cardBackground,
           maxWidth: "768px",
         }}
@@ -226,31 +226,22 @@ const Content = () => {
           >
             <Col>
               <Zoom>
-                <AiFillHtml5
-                  className="experience-icons"
-                  
-                />
+                <AiFillHtml5 className="experience-icons" />
               </Zoom>
             </Col>
             <Col>
               <Zoom>
-                <IoLogoCss3
-                  className="experience-icons"
-                />
+                <IoLogoCss3 className="experience-icons" />
               </Zoom>
             </Col>
             <Col>
               <Zoom>
-                <SiJavascript
-                  className="experience-icons"
-                />
+                <SiJavascript className="experience-icons" />
               </Zoom>
             </Col>
             <Col>
               <Zoom>
-                <FaNodeJs
-                  className="experience-icons"
-                />
+                <FaNodeJs className="experience-icons" />
               </Zoom>
             </Col>
           </Row>
@@ -262,36 +253,34 @@ const Content = () => {
             Add some text about your years of experience and coding
             bootcamp......? Maybe..... IDK
           </p>
-          <Zoom>
-            <Row
-              style={{
-                background: "rgba(0,0,0,.7",
-                padding: ".5rem 0",
-                textAlign: "center",
-              }}
-            >
-              <Col>
-                <FaReact
-                  className="experience-icons"
-                />
-              </Col>
-              <Col>
-                <SiInkscape
-                  className="experience-icons"
-                />
-              </Col>
-              <Col>
-                <BsBootstrap
-                  className="experience-icons"
-                />
-              </Col>
-              <Col>
-                <FaNpm
-                  className="experience-icons"
-                />
-              </Col>
-            </Row>
-          </Zoom>
+          <Row
+            style={{
+              background: "rgba(0,0,0,.7",
+              padding: ".5rem 0",
+              textAlign: "center",
+            }}
+          >
+            <Col>
+              <Zoom>
+                <FaReact className="experience-icons" />
+              </Zoom>
+            </Col>
+            <Col>
+              <Zoom>
+                <SiInkscape className="experience-icons" />
+              </Zoom>
+            </Col>
+            <Col>
+              <Zoom>
+                <BsBootstrap className="experience-icons" />
+              </Zoom>
+            </Col>
+            <Col>
+              <Zoom>
+                <FaNpm className="experience-icons" />
+              </Zoom>
+            </Col>
+          </Row>
         </div>
       </Container>
 
