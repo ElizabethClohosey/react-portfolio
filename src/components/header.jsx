@@ -36,6 +36,11 @@ const Header = () => {
             <p>Fullstack Software Engineer</p>
           </Col>
         </Row>
+        <Row>
+          <Col>
+          <p>Testing git add except.....</p>
+          </Col>
+        </Row>
       </Container>
     </header>
   );
