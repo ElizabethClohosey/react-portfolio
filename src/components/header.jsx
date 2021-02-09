@@ -33,7 +33,7 @@ const Header = () => {
             className="text-center text-md-left order-2"
             style={{ color: "white", marginTop: "-15px", fontWeight: "800" }}
           >
-            <p>Fullstack Software Engineer</p>
+            <p>Fullstack WebDeveloper</p>
           </Col>
         </Row>
       </Container>
