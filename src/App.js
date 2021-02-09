@@ -7,7 +7,7 @@ import Content from "./components/content";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
     console.log(PUBLIC_URL)
       <div className="App">
         {/* <section class="stars-background"> */}
@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/" render={(props) => <Content {...props} />} />
         </div>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
