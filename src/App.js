@@ -16,7 +16,7 @@ function App() {
         <div class="clouds"></div>
         <div className="wrapper">
           <Header/>
-          <Router exact path="/react-portfolio" render={(props) => <Content {...props} />} />
+          <Route exact path="/" render={(props) => <Content {...props} />} />
         </div>
       </div>
     </BrowserRouter>
