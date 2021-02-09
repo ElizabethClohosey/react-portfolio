@@ -12,7 +12,7 @@ const Header = () => {
       <Container>
         <Row className="d-flex justify-content-between">
           <Col md={9} className="text-center text-md-left order-0">
-            <h1 className="blink_me">Elizabeth Clohosey - testing</h1>
+            <h1 className="blink_me">Elizabeth Clohosey</h1>
           </Col>
           <Col
             md={3}
