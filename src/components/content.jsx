@@ -26,6 +26,7 @@ const Content = () => {
 
   const projectCardStyle = {
     textAlign: "center",
+    maxWidth: "20rem",
     marginBottom: "7rem",
     background: cardBackground,
     boxShadow: "0 0 10px black",
