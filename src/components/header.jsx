@@ -31,7 +31,7 @@ const Header = () => {
           <Col
             lg={12}
             className="text-center text-md-left order-2"
-            style={{ color: "white", marginTop: "-15px", fontWeight: "800" }}
+            style={{ color: "white", marginTop: "-10px", fontWeight: "800" }}
           >
             <p>Fullstack WebDeveloper</p>
           </Col>
