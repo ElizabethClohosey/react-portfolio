@@ -8,6 +8,7 @@ import Content from "./components/content";
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+    console.log(PUBLIC_URL)
       <div className="App">
         {/* <section class="stars-background"> */}
         <div class="stars"></div>
@@ -15,7 +16,7 @@ function App() {
         <div class="clouds"></div>
         <div className="wrapper">
           <Header/>
-          <Route exact path="/react-portfolio" render={(props) => <Content {...props} />} />
+          <Router exact path="/react-portfolio" render={(props) => <Content {...props} />} />
         </div>
       </div>
     </BrowserRouter>
